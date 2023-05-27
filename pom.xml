@@ -16,6 +16,7 @@
         <module>common</module>
         <module>mvc-config</module>
         <module>admin</module>
+        <module>authority-center</module>
     </modules>
 
     <properties>

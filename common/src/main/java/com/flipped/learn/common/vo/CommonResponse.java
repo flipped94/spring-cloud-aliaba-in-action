@@ -1,5 +1,6 @@
 package com.flipped.learn.common.vo;
 
+import com.flipped.learn.common.exception.enums.GlobalErrorCodeConstants;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,5 +32,12 @@ public class CommonResponse<T> implements Serializable {
     public CommonResponse(Integer code, String message) {
         this.code = code;
         this.message = message;
+    }
+
+    public static <T> CommonResponse<T> success(T data) {
+        CommonResponse<T> commonResponse =
+                new CommonResponse<>(GlobalErrorCodeConstants.SUCCESS.getCode(), GlobalErrorCodeConstants.SUCCESS.getMessage());
+        commonResponse.setData(data);
+        return commonResponse;
     }
 }
