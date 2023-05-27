@@ -1,0 +1,34 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /e-commerce-admin
+
+spring:
+  application:
+    name: e-commerce-admin
+  security:
+    user:
+      name: flipped
+      password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: ecommerce
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+          user.name: flipped
+          user.password: 123456
+  thymeleaf:
+    check-template: false
+    check-template-location: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
