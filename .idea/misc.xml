@@ -7,6 +7,18 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-goods-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-logistics-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-service-config/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/e-commerce-service-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/e-commerce-service/pom.xml" />
+        <option value="$PROJECT_DIR$/goods-service/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -21,5 +21,5 @@ public interface CommonConstant {
     /**
      * 授权中心的 service-id
      */
-    String AUTHORITY_CENTER_SERVICE_ID = "e-commerce-authority-center";
+    String AUTHORITY_CENTER_SERVICE_ID = "authority-center";
 }

@@ -1,0 +1,31 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /imooc
+
+spring:
+  application:
+    name: e-commerce-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+        namespace: ecommerce
+
+# 这个地方独立配置, 是网关的数据, 代码 GatewayConfig.java 中读取被监听
+nacos:
+  gateway:
+    route:
+      config:
+        data-id: e-commerce-gateway-router
+        group: e-commerce
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

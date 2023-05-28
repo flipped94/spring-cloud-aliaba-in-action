@@ -17,6 +17,7 @@
         <module>mvc-config</module>
         <module>admin</module>
         <module>authority-center</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
