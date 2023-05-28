@@ -1,5 +1,5 @@
 -- 创建 t_ecommerce_balance 数据表
-CREATE TABLE IF NOT EXISTS `imooc_e_commerce`.`t_ecommerce_balance` (
+CREATE TABLE IF NOT EXISTS `e_commerce_account`.`t_ecommerce_balance` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '自增主键',
   `user_id` bigint(20) NOT NULL DEFAULT 0 COMMENT '用户 id',
   `balance` bigint(20) NOT NULL DEFAULT 0 COMMENT '账户余额',

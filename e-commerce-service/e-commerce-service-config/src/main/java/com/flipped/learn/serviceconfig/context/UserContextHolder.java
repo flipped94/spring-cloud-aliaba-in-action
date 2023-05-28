@@ -9,7 +9,7 @@ import com.flipped.learn.common.vo.LoginUserInfo;
  * 1. 保证没有资源泄露
  * 2. 保证线程在重用时, 不会出现数据混乱
  */
-public class AccessContext {
+public class UserContextHolder {
 
     private static final ThreadLocal<LoginUserInfo> loginUserInfo = new ThreadLocal<>();
 

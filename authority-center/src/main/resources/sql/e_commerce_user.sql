@@ -1,5 +1,5 @@
 -- 创建 t_ecommerce_user 数据表
-CREATE TABLE IF NOT EXISTS `imooc_e_commerce`.`t_ecommerce_user` (
+CREATE TABLE IF NOT EXISTS `e_commerce_user`.`t_ecommerce_user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '自增主键',
   `username` varchar(64) NOT NULL DEFAULT '' COMMENT '用户名',
   `password` varchar(256) NOT NULL DEFAULT '' COMMENT 'MD5 加密之后的密码',
