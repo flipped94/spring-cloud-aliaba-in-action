@@ -19,6 +19,7 @@
         <module>authority-center</module>
         <module>gateway</module>
         <module>e-commerce-service</module>
+        <module>e-commerce-service/e-commerce-goods-service</module>
     </modules>
 
     <properties>
@@ -114,14 +115,14 @@
                     <target>11</target>
                     <annotationProcessorPaths>
                         <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${org.mapstruct.version}</version>
-                        </path>
-                        <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                             <version>1.18.28</version>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${org.mapstruct.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
