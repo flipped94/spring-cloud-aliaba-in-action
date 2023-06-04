@@ -3,6 +3,7 @@ package com.flipped.learn.accountservice.converter;
 import com.flipped.learn.accountservice.domain.EcommerceAddress;
 import com.flipped.learn.serviceconfig.context.UserContextHolder;
 import com.flipped.learn.servicesdk.account.AddressInfo;
+import com.flipped.learn.servicesdk.account.UserAddress;
 import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 

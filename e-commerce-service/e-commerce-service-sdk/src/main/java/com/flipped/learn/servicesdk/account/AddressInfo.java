@@ -55,5 +55,25 @@ public class AddressInfo {
 
         @ApiModelProperty(value = "更新时间")
         private Date updateTime;
+
+        public AddressItem(Long id) {
+            this.id = id;
+        }
+
+        /**
+         * <h2>将 AddressItem 转换成 UserAddress</h2>
+         * */
+        public UserAddress toUserAddress() {
+
+            UserAddress userAddress = new UserAddress();
+
+            userAddress.setUsername(this.username);
+            userAddress.setPhone(this.phone);
+            userAddress.setProvince(this.province);
+            userAddress.setCity(this.city);
+            userAddress.setAddressDetail(this.addressDetail);
+
+            return userAddress;
+        }
     }
 }

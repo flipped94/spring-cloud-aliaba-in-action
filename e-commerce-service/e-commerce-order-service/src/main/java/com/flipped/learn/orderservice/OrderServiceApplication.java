@@ -1,4 +1,4 @@
-package com.flipped.learn.goodsservice;
+package com.flipped.learn.orderservice;
 
 import com.flipped.learn.serviceconfig.config.DataSourceProxyAutoConfiguration;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing
 @EnableFeignClients
 @Import(DataSourceProxyAutoConfiguration.class)
-@SpringBootApplication(scanBasePackages = {"com.flipped.learn"})
-public class GoodsServiceApplication {
+@SpringBootApplication(scanBasePackages = {"com.flipped.lean"})
+public class OrderServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GoodsServiceApplication.class, args);
+        SpringApplication.run(OrderServiceApplication.class, args);
     }
 }
